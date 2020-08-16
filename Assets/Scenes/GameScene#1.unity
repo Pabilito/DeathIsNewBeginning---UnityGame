@@ -244,6 +244,7 @@ MonoBehaviour:
   stars0_1: {fileID: 1976328569}
   stars0_2: {fileID: 1687547765}
   stars0_3: {fileID: 870014551}
+  t0_1: {fileID: 903032907}
   t0_2: {fileID: 1832813654}
   t0_3: {fileID: 2000015486}
   level0_2: {fileID: 1031669483}
@@ -606,7 +607,7 @@ GameObject:
   - component: {fileID: 903032908}
   - component: {fileID: 903032907}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

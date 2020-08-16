@@ -9,6 +9,7 @@ public class Levels0Handler : MonoBehaviour
     public Image stars0_2;
     public Image stars0_3;
 
+    public Text t0_1;
     public Text t0_2;
     public Text t0_3;
 
@@ -20,24 +21,36 @@ public class Levels0Handler : MonoBehaviour
 
     void Start() //check interactability
     {
+        t0_1.color = Color.green;
+
         if (GlobalVariables.instance.getLevelScore(3) == 1)
         {
             stars0_3.color = visible;
             stars0_2.color = visible;
             stars0_1.color = visible;
+            level0_2.interactable = true;
+            level0_3.interactable = true;
+            t0_2.color = Color.green;
+            t0_3.color = Color.green;
         }
         else if (GlobalVariables.instance.getLevelScore(2) == 1)
         {
             stars0_3.color = invisible;
             stars0_2.color = visible;
             stars0_1.color = visible;
+            level0_2.interactable = true;
+            level0_3.interactable = true;
+            t0_2.color = Color.green;
+            t0_3.color = Color.green;
         }
         else if (GlobalVariables.instance.getLevelScore(1) == 1)
         {
             stars0_3.color = invisible;
             stars0_2.color = invisible;
             stars0_1.color = visible;
+            level0_2.interactable = true;
             level0_3.interactable = false;
+            t0_2.color = Color.green;
             t0_3.color = Color.red;
         }
         else

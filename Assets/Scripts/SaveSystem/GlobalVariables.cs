@@ -63,15 +63,15 @@ public class GlobalVariables : MonoBehaviour
             switch (level)
             {
                 case 1:
-                    currentScore = starsLevel0_1;
+                    starsLevel0_1 = value;
                     SaveMan.GetComponent<SaveManager>().save.starsLevel0_1 = starsLevel0_1;
                     break;
                 case 2:
-                    currentScore = starsLevel0_2;
+                    starsLevel0_2 = value;
                     SaveMan.GetComponent<SaveManager>().save.starsLevel0_2 = starsLevel0_2;
                     break;
                 case 3:
-                    currentScore = starsLevel0_3;
+                    starsLevel0_3 = value;
                     SaveMan.GetComponent<SaveManager>().save.starsLevel0_3 = starsLevel0_3;
                     break;
             }
