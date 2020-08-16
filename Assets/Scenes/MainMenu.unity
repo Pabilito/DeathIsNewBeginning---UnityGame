@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 870537741}
   - component: {fileID: 870537737}
   - component: {fileID: 870537742}
+  - component: {fileID: 870537743}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -472,6 +473,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaveMan: {fileID: 1015844312}
+--- !u!114 &870537743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870537736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faa7fed384d77b46b3ed4a714117191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &882178133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,9 +1252,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 870537737}
-        m_TargetAssemblyTypeName: PlayButtonHandler, Assembly-CSharp
-        m_MethodName: OnPlay
+      - m_Target: {fileID: 870537743}
+        m_TargetAssemblyTypeName: GoToCredits, Assembly-CSharp
+        m_MethodName: goToCredits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
