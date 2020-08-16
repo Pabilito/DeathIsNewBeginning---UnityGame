@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
             pointSound.Play();
             this.gameObject.GetComponent<HealthAndPointsManager>().addPoint();
         }
-        else if (col.gameObject.CompareTag("Meta"))
+        else if (col.gameObject.CompareTag("Meta") && this.GetComponent<HealthAndPointsManager>().getPoints()>0)
         {
             gameEnded = true;
             levelManager.GetComponent<HUDHandler>().showLastLifeWarning(false);

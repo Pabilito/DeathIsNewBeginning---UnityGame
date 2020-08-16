@@ -6,9 +6,18 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
+    public static GlobalVariables instance { set; get; }
+
     public GameObject SaveMan;
-    static int starsLevel1 = 0;
-    static int starsLevel2 = 0;
+    static int starsLevel0_1 = 0;
+    static int starsLevel0_2 = 0;
+    static int starsLevel0_3 = 0;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject); //can be accessed anywhere
+        instance = this;
+    }
 
     void Start()
     {
@@ -20,24 +29,29 @@ public class GlobalVariables : MonoBehaviour
         switch (level)
         {
             case 1:
-                return starsLevel1;
+                return starsLevel0_1;
             case 2:
-                return starsLevel2;
+                return starsLevel0_2;
+            case 3:
+                return starsLevel0_3;
         }
         return -1; //error
     }
 
-    void setLevelHighScore(int level, int value)
+    public void setLevelHighScore(int level, int value)
     {
         int currentScore;
 
         switch (level)
         {
             case 1:
-                currentScore = starsLevel1;
+                currentScore = starsLevel0_1;
                 break;
             case 2:
-                currentScore = starsLevel2;
+                currentScore = starsLevel0_2;
+                break;
+            case 3:
+                currentScore = starsLevel0_3;
                 break;
             default:
                 currentScore = -1; //error
@@ -49,12 +63,16 @@ public class GlobalVariables : MonoBehaviour
             switch (level)
             {
                 case 1:
-                    currentScore = starsLevel1;
-                    SaveMan.GetComponent<SaveManager>().save.starsLevel1 = starsLevel1;
+                    currentScore = starsLevel0_1;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel0_1 = starsLevel0_1;
                     break;
                 case 2:
-                    currentScore = starsLevel2;
-                    SaveMan.GetComponent<SaveManager>().save.starsLevel2 = starsLevel2;
+                    currentScore = starsLevel0_2;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel0_2 = starsLevel0_2;
+                    break;
+                case 3:
+                    currentScore = starsLevel0_3;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel0_3 = starsLevel0_3;
                     break;
             }
             SaveMan.GetComponent<SaveManager>().Save();
@@ -63,7 +81,8 @@ public class GlobalVariables : MonoBehaviour
 
     void Load()
     {
-        starsLevel1 = SaveMan.GetComponent<SaveManager>().save.starsLevel1;
-        starsLevel2 = SaveMan.GetComponent<SaveManager>().save.starsLevel2;
+        starsLevel0_1 = SaveMan.GetComponent<SaveManager>().save.starsLevel0_1;
+        starsLevel0_2 = SaveMan.GetComponent<SaveManager>().save.starsLevel0_2;
+        starsLevel0_3 = SaveMan.GetComponent<SaveManager>().save.starsLevel0_3;
     }
 }

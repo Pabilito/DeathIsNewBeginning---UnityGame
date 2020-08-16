@@ -10,6 +10,7 @@ public class HUDHandler : MonoBehaviour
     public Text defeatTxt;
     public Text lastLifeWarning;
     public Button pauseButton;
+    public Button nextLevel;
     public bool paused = false;
     public GameObject player;
     public Button BackToMenu;
@@ -28,11 +29,13 @@ public class HUDHandler : MonoBehaviour
         winTxt.enabled = false;
         lastLifeWarning.enabled = false;
         showMenuButtons(false);
+        nextLevel.gameObject.SetActive(false);
         showBigPoints(0, false);
     }
 
     public void showWinTxt()
     {
+        nextLevel.gameObject.SetActive(true);
         showMenuButtons(true);
         winTxt.enabled = true;
         showBigPoints(player.GetComponent<HealthAndPointsManager>().getPoints(), true);

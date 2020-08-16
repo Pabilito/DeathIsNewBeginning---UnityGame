@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &229156621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229156623}
+  - component: {fileID: 229156622}
+  m_Layer: 0
+  m_Name: GlobalVariables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &229156622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229156621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a700b40680662c74eb3e68b8ffbd7ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SaveMan: {fileID: 1015844312}
+--- !u!4 &229156623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229156621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1088.819, y: 546.12646, z: -61.96362}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267361822
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +423,6 @@ GameObject:
   - component: {fileID: 870537738}
   - component: {fileID: 870537741}
   - component: {fileID: 870537737}
-  - component: {fileID: 870537742}
   - component: {fileID: 870537743}
   m_Layer: 0
   m_Name: EventSystem
@@ -460,19 +503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8927aab4900bbd04aab219fde1b59bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &870537742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870537736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a700b40680662c74eb3e68b8ffbd7ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SaveMan: {fileID: 1015844312}
 --- !u!114 &870537743
 MonoBehaviour:
   m_ObjectHideFlags: 0
