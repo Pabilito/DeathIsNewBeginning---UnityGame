@@ -573,9 +573,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -806,7 +806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb27f278fe60e541af2b7dcb1b7e55a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starsTxt: {fileID: 1174390414}
 --- !u!114 &277122182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +871,10 @@ MonoBehaviour:
   level1_6: {fileID: 457357363}
   level1_7: {fileID: 191225281}
   level1_8: {fileID: 1587363801}
+  starsTxt: {fileID: 1174390414}
+  starsTxtmini1: {fileID: 1817670045}
+  starsTxtmini2: {fileID: 721169932}
+  starsTxtmini3: {fileID: 77503826}
 --- !u!114 &277122185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,9 +1163,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1293,9 +1296,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2646,9 +2649,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2955,9 +2958,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_1
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3242,9 +3245,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3451,9 +3454,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_2
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3791,9 +3794,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoToMinigame1, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+      - m_Target: {fileID: 277122181}
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
