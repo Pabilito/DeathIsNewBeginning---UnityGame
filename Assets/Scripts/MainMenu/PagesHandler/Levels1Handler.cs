@@ -52,10 +52,11 @@ public class Levels1Handler : MonoBehaviour
     private Color visible = new Vector4(1.0f, 1.0f, 1.0f, 1.0f);
     private Color invisible = new Vector4(0.3f, 0.4f, 0.6f, 0.3f);
 
-    void Start()
-    {
-        
-    }
+    public Text starsTxt;
 
+    private void Start()
+    {
+        starsTxt.GetComponent<Text>().text = GlobalVariables.instance.getLevelSum(1).ToString() + "/21";
+    }
 
 }

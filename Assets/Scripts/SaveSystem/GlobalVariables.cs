@@ -38,6 +38,17 @@ public class GlobalVariables : MonoBehaviour
         sumLevels1 = starsLevel1_1 + starsLevel1_2 + starsLevel1_3 + starsLevel1_4 + starsLevel1_5 + starsLevel1_6 + starsLevel1_7 + starsLevel1_8;
     }
 
+    public int getLevelSum(int levels)
+    {
+        switch (levels)
+        {
+            case 1:
+                return sumLevels1;
+        }
+        return -1; //error
+    }
+
+
     public int getLevelScore(int level)
     {
         switch (level)

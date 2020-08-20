@@ -11,5 +11,4 @@
     public int starsLevel1_6 = 0;
     public int starsLevel1_7 = 0;
     public int starsLevel1_8 = 0;
-
 }
