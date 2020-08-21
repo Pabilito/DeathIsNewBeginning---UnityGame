@@ -9,26 +9,22 @@ public class TextHandler0_3 : MonoBehaviour
 
     void Start()
     {
-        tutorialTxt.GetComponent<Text>().text = "To be done";
+        tutorialTxt.GetComponent<Text>().text = "Collect life to increase your current health";
     }
 
     private void Update()
     {
-        if (this.GetComponent<HealthAndPointsManager>().getHealth() < 0)
+        if (this.transform.position.x > 10)
         {
-            tutorialTxt.GetComponent<Text>().text = "";
+            tutorialTxt.GetComponent<Text>().text = "Flying obstacles are destoryed when they hit the wall or dead body";
         }
-        else if (this.GetComponent<HealthAndPointsManager>().getHealth() == 0)
+        else if (this.transform.position.x > 3)
         {
-            tutorialTxt.GetComponent<Text>().text = "";
-        }
-        else if (this.transform.position.x > -2)
-        {
-            tutorialTxt.GetComponent<Text>().text = "";
+            tutorialTxt.GetComponent<Text>().text = "Beware of flying obstacles";
         }
         else
         {
-            tutorialTxt.GetComponent<Text>().text = "Level in development";
+            tutorialTxt.GetComponent<Text>().text = "Collect life to increase your current health";
         }
     }
 

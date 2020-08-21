@@ -6,7 +6,6 @@ public class FlyingObstacleHandler : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     public float speedLeft = 1.0f;
-    public GameObject scriptManager;
 
     void Start()
     {
@@ -16,7 +15,7 @@ public class FlyingObstacleHandler : MonoBehaviour
 
     private void Update() //not the most efficient option
     {
-        if (scriptManager.GetComponent<HUDHandler>().paused)
+        if (GameObject.FindGameObjectWithTag("EventSystem").GetComponent<HUDHandler>().paused)
         {
             this.GetComponent<Rigidbody2D>().simulated = false;
         }
