@@ -1278,6 +1278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a8b5cef5d23e34092beaa0b7c8477e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1655136173}
 --- !u!1 &375515094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1328,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 375515094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34cf1462238bb6c42b4cc8bce2d13da6, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb27f278fe60e541af2b7dcb1b7e55a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &375515097
@@ -1374,8 +1375,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 375515096}
-        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
-        m_MethodName: OnLevel0_3
+        m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
+        m_MethodName: OnLevel1_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
