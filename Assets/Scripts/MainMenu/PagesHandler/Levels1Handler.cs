@@ -65,7 +65,7 @@ public class Levels1Handler : MonoBehaviour
         starsTxt.GetComponent<Text>().text = stars + "/21";
         starsTxtmini1.GetComponent<Text>().text = "Bonus 1\n"+ stars + "/5";
         starsTxtmini2.GetComponent<Text>().text = "Bonus 2\n" + stars + "/10";
-        starsTxtmini3.GetComponent<Text>().text = "Bonus 2\n" + stars + "/15";
+        starsTxtmini3.GetComponent<Text>().text = "Bonus 3\n" + stars + "/15";
     }
 
     void checkExtraLevels()
@@ -73,17 +73,23 @@ public class Levels1Handler : MonoBehaviour
         int sum = GlobalVariables.instance.getLevelSum(1);
         if (sum < 5)
         {
+            t1_6.color = Color.black;
+            t1_7.color = Color.black;
+            t1_8.color = Color.black;
             level1_6.interactable = false;
             level1_7.interactable = false;
             level1_8.interactable = false;
         }
         else if (sum < 10)
         {
+            t1_7.color = Color.black;
+            t1_8.color = Color.black;
             level1_7.interactable = false;
             level1_8.interactable = false;
         }
         else if(sum < 15)
         {
+            t1_8.color = Color.black;
             level1_8.interactable = false;
         }
     }
@@ -93,11 +99,13 @@ public class Levels1Handler : MonoBehaviour
         if (GlobalVariables.instance.getLevelScore(3) == 0)
         {
             level1_1.interactable = false;
+            t1_1.color = Color.black;
         }
         //assign stars
         switch (GlobalVariables.instance.getLevelScore(11))
         {
             case 0:
+                t1_2.color = Color.black;
                 level1_2.interactable = false;
                 stars1_1_1.color = invisible;
                 stars1_1_2.color = invisible;
@@ -123,6 +131,7 @@ public class Levels1Handler : MonoBehaviour
         switch (GlobalVariables.instance.getLevelScore(12))
         {
             case 0:
+                t1_3.color = Color.black;
                 level1_3.interactable = false;
                 stars1_2_1.color = invisible;
                 stars1_2_2.color = invisible;
@@ -148,6 +157,7 @@ public class Levels1Handler : MonoBehaviour
         switch (GlobalVariables.instance.getLevelScore(13))
         {
             case 0:
+                t1_4.color = Color.black;
                 level1_4.interactable = false;
                 stars1_3_1.color = invisible;
                 stars1_3_2.color = invisible;
@@ -173,6 +183,7 @@ public class Levels1Handler : MonoBehaviour
         switch (GlobalVariables.instance.getLevelScore(14))
         {
             case 0:
+                t1_5.color = Color.black;
                 level1_5.interactable = false;
                 stars1_4_1.color = invisible;
                 stars1_4_2.color = invisible;
