@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour
 {
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().name == "BufforScene")
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     public void OnLevel0_1()
     {
         SceneManager.LoadScene("Level0_1");
