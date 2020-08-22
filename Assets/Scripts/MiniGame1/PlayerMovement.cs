@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 5.0f;
     private Rigidbody2D rb2D;
     private float thrust = 10.0f;
-    private bool airborne = false;
+    public bool airborne = false;
     private Vector2 spawn;
     public GameObject deadBody;
     public GameObject levelManager;

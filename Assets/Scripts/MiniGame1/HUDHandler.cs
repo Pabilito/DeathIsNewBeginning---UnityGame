@@ -20,8 +20,24 @@ public class HUDHandler : MonoBehaviour
     public Image bigStar3;
     bool gameEnded = false;
 
+    public Image jumpImg;
+    public Sprite jumpReady;
+    public Sprite jumpNotReady;
+
     private Color visible = new Vector4(1.0f, 1.0f, 1.0f, 1.0f);
     private Color invisible = new Vector4(0.3f, 0.4f, 0.6f, 0.3f);
+
+    private void Update()
+    {
+        if (player.GetComponent<PlayerMovement>().airborne)
+        {
+            jumpImg.GetComponent<Image>().sprite = jumpNotReady;
+        }
+        else
+        {
+            jumpImg.GetComponent<Image>().sprite = jumpReady;
+        }
+    }
 
     void Start()
     {
