@@ -128,7 +128,11 @@ public class HUDHandler : MonoBehaviour
 
     public void onMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("GameScene#1");
     }
 
+    public void onMenu1()
+    {
+        SceneManager.LoadScene("Selection1");
+    }
 }

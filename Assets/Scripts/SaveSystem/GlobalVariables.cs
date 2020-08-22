@@ -44,6 +44,7 @@ public class GlobalVariables : MonoBehaviour
         switch (levels)
         {
             case 1:
+                calculateSums();
                 return sumLevels1;
         }
         return -1; //error

@@ -121,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
         Color color = Color.white;
         color.a = 0.0f;
         this.gameObject.GetComponent<SpriteRenderer>().color = color;
+        this.gameObject.GetComponent<Rigidbody2D>().simulated = false;
     }
 
 }

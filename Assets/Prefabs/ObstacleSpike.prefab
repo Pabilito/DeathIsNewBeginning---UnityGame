@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7174460846213115137}
   - component: {fileID: 7174460846213115136}
-  - component: {fileID: 7174460846213115139}
+  - component: {fileID: 404774272}
   m_Layer: 0
-  m_Name: Obstacle2
+  m_Name: ObstacleSpike
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7174460846213115139
-BoxCollider2D:
+--- !u!70 &404774272
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,16 +96,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06329799, y: 0.06375837}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.92, y: 2.92}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.433404, y: 2.4324832}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.019741092, y: 0.13931552}
+  m_Size: {x: 1.572954, y: 1.5840311}
+  m_Direction: 0

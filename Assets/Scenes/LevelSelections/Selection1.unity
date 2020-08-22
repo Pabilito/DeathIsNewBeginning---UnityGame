@@ -830,30 +830,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23076f9c2266744b98fb5342dd7f633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars1_1_1: {fileID: 142293725}
-  stars1_1_2: {fileID: 507052867}
-  stars1_1_3: {fileID: 1429020602}
-  stars1_2_1: {fileID: 1681781630}
-  stars1_2_2: {fileID: 1709001887}
-  stars1_2_3: {fileID: 996887821}
-  stars1_3_1: {fileID: 1917083808}
-  stars1_3_2: {fileID: 335810554}
-  stars1_3_3: {fileID: 724660535}
-  stars1_4_1: {fileID: 1969433713}
-  stars1_4_2: {fileID: 907805417}
-  stars1_4_3: {fileID: 2012939761}
-  stars1_5_1: {fileID: 973649316}
-  stars1_5_2: {fileID: 236059982}
-  stars1_5_3: {fileID: 1728826878}
-  stars1_6_1: {fileID: 2019188038}
-  stars1_6_2: {fileID: 1230926754}
-  stars1_6_3: {fileID: 1947125435}
-  stars1_7_1: {fileID: 2045937450}
-  stars1_7_2: {fileID: 673972517}
-  stars1_7_3: {fileID: 254730851}
-  stars1_8_1: {fileID: 1077287233}
-  stars1_8_2: {fileID: 2140458411}
-  stars1_8_3: {fileID: 1111934100}
+  stars1_1_1: {fileID: 1429020602}
+  stars1_1_2: {fileID: 142293725}
+  stars1_1_3: {fileID: 507052867}
+  stars1_2_1: {fileID: 996887821}
+  stars1_2_2: {fileID: 1681781630}
+  stars1_2_3: {fileID: 1709001887}
+  stars1_3_1: {fileID: 724660535}
+  stars1_3_2: {fileID: 1917083808}
+  stars1_3_3: {fileID: 335810554}
+  stars1_4_1: {fileID: 2012939761}
+  stars1_4_2: {fileID: 1969433713}
+  stars1_4_3: {fileID: 907805417}
+  stars1_5_1: {fileID: 1728826878}
+  stars1_5_2: {fileID: 973649316}
+  stars1_5_3: {fileID: 236059982}
+  stars1_6_1: {fileID: 1947125435}
+  stars1_6_2: {fileID: 2019188038}
+  stars1_6_3: {fileID: 1230926754}
+  stars1_7_1: {fileID: 254730851}
+  stars1_7_2: {fileID: 2045937450}
+  stars1_7_3: {fileID: 673972517}
+  stars1_8_1: {fileID: 1111934100}
+  stars1_8_2: {fileID: 1077287233}
+  stars1_8_3: {fileID: 2140458411}
   t1_1: {fileID: 1707160777}
   t1_2: {fileID: 1285000097}
   t1_3: {fileID: 2039354305}

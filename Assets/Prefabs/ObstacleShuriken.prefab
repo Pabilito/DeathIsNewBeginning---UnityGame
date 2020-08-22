@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1900799561418604795}
   - component: {fileID: 1900799561418604794}
-  - component: {fileID: 1900799561418604793}
   - component: {fileID: 5917495479034939033}
+  - component: {fileID: 1528273369}
   m_Layer: 0
   m_Name: ObstacleShuriken
   m_TagString: Obstacle
@@ -84,32 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1900799561418604793
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900799561418604792}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.06329799, y: 0.06375837}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.92, y: 2.92}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.433404, y: 2.4324832}
-  m_EdgeRadius: 0
 --- !u!114 &5917495479034939033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +96,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49df2878a64e2244fa14aafa909486ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &1528273369
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900799561418604792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.059222557, y: 0.019885167}
+  m_Size: {x: 1.5729556, y: 1.8224034}
+  m_Direction: 0
