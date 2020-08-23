@@ -22,6 +22,11 @@ public class HealthAndPointsManager : MonoBehaviour
 
     private void Start()
     {
+        if (GlobalVariables.instance.extraLifeOn)
+        {
+            health = 3;
+            GlobalVariables.instance.extraLifeOn = false;
+        }
         adjustLivesHUD();
         adjustPointsHUD();
     }
@@ -60,8 +65,11 @@ public class HealthAndPointsManager : MonoBehaviour
 
     public void addLife()
     {
-        health++;
-        adjustLivesHUD();
+        if (health < 3)
+        {
+            health++;
+            adjustLivesHUD();
+        }
     }
 
     void adjustLivesHUD()

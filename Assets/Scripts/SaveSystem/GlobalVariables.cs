@@ -22,6 +22,8 @@ public class GlobalVariables : MonoBehaviour
     static int starsLevel1_8 = 0;
     static int sumLevels1;
 
+    public bool extraLifeOn = false;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject); //can be accessed anywhere

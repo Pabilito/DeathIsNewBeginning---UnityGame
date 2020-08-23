@@ -85,7 +85,12 @@ public class PlayerMovement : MonoBehaviour
             gameEnded = true;
             levelManager.GetComponent<HUDHandler>().showLastLifeWarning(false);
             levelManager.GetComponent<HUDHandler>().showWinTxt();
+            this.gameObject.GetComponent<Rigidbody2D>().simulated = false;
             finishSound.Play();
+        }
+        else if (col.gameObject.CompareTag("Meta"))
+        {
+            airborne = false; //jump reset
         }
         else if (col.gameObject.CompareTag("FlyingObstacle"))
         {
