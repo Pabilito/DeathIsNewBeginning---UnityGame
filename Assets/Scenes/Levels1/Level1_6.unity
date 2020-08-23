@@ -2492,7 +2492,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 483063981}
         m_TargetAssemblyTypeName: LevelsSectecion1, Assembly-CSharp
-        m_MethodName: OnLevel1_4
+        m_MethodName: OnLevel1_7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
