@@ -62,7 +62,7 @@ public class Levels1Handler : MonoBehaviour
         checkStars();
         checkExtraLevels();
         string stars = GlobalVariables.instance.getLevelSum(1).ToString();
-        starsTxt.GetComponent<Text>().text = stars + "/21";
+        starsTxt.GetComponent<Text>().text = stars + "/24";
         starsTxtmini1.GetComponent<Text>().text = "Bonus 1\n"+ stars + "/5";
         starsTxtmini2.GetComponent<Text>().text = "Bonus 2\n" + stars + "/10";
         starsTxtmini3.GetComponent<Text>().text = "Bonus 3\n" + stars + "/15";
