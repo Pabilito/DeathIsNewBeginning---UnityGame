@@ -15,7 +15,7 @@ public class RewardedAds : MonoBehaviour
     {
         adButton.interactable = false;
         adText.GetComponent<Text>().text = "Ad already watched";
-        if (!GlobalVariables.instance.extraLifeOn)
+        if (!GlobalVariables.extraLifeOn)
         {
             adText.GetComponent<Text>().text = "Watch ad to get extra life";
             StartCoroutine(ShowVideoAvailability());
@@ -34,7 +34,7 @@ public class RewardedAds : MonoBehaviour
 
     public void onAdForExtraLife()
     {
-        GlobalVariables.instance.extraLifeOn = true;
+        GlobalVariables.extraLifeOn = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Advertisement.Show(videoID);
     }

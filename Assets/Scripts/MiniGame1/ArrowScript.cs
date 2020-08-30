@@ -21,10 +21,8 @@ public class ArrowScript : MonoBehaviour
         double deltay = positionFinish.y - positionPlayer.y;
         double rotationZWithoutOffset = Math.Atan(deltay / deltax);
         double rotationz = (rotationZWithoutOffset - Math.PI) * 180 / Math.PI;
+        double rotationzv2 = (rotationZWithoutOffset) * 180 / Math.PI; //rotation when player is further than finish line
 
-        double rotationzv2 = (rotationZWithoutOffset) * 180 / Math.PI;
-
-        print(rotationz);
         if (deltax > 0)
         {
             this.transform.rotation = Quaternion.AngleAxis(Convert.ToSingle(rotationz), Vector3.forward);
