@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             dir *= Time.deltaTime;
 
             // Move object
-            transform.Translate(dir * speed);
+            transform.Translate(dir * 2 * speed);
         }
     }
 
