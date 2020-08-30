@@ -21,9 +21,21 @@ public class ArrowScript : MonoBehaviour
         double deltay = positionFinish.y - positionPlayer.y;
         double rotationZWithoutOffset = Math.Atan(deltay / deltax);
         double rotationz = (rotationZWithoutOffset - Math.PI) * 180 / Math.PI;
+
+        double rotationzv2 = (rotationZWithoutOffset) * 180 / Math.PI;
+
         print(rotationz);
-        this.transform.rotation = Quaternion.AngleAxis(Convert.ToSingle(rotationz), Vector3.forward);
-        this.transform.position = new Vector3(positionPlayer.x + 2 * Convert.ToSingle(Math.Cos(rotationZWithoutOffset)),
-            positionPlayer.y + 2 * Convert.ToSingle(Math.Sin(rotationZWithoutOffset)), -9); 
+        if (deltax > 0)
+        {
+            this.transform.rotation = Quaternion.AngleAxis(Convert.ToSingle(rotationz), Vector3.forward);
+            this.transform.position = new Vector3(positionPlayer.x + 2 * Convert.ToSingle(Math.Cos(rotationZWithoutOffset)),
+                positionPlayer.y + 2 * Convert.ToSingle(Math.Sin(rotationZWithoutOffset)), -9);
+        }
+        else
+        {
+            this.transform.rotation = Quaternion.AngleAxis(Convert.ToSingle(rotationzv2), Vector3.forward);
+            this.transform.position = new Vector3(positionPlayer.x - 2 * Convert.ToSingle(Math.Cos(rotationZWithoutOffset)),
+                positionPlayer.y - 2 * Convert.ToSingle(Math.Sin(rotationZWithoutOffset)), -9);
+        }
     }
 }
