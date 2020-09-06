@@ -64,10 +64,6 @@ public class PlayerMovement : MonoBehaviour
         {
             airborne = false;
         }
-        else if (col.gameObject.CompareTag("Boost"))
-        {
-            rb2D.velocity = Vector2.up * thrust * 5 * Mathf.Cos(col.transform.rotation.z) + Vector2.left * thrust * 5 * Mathf.Sin(col.transform.rotation.z); ;
-        }
         else if (col.gameObject.CompareTag("PortalIn"))
         {
             teleport();
