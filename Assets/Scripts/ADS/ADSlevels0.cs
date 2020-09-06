@@ -6,10 +6,13 @@ using UnityEngine.Advertisements;
 public class ADSlevels0 : MonoBehaviour
 {
     string videoID = "video";
-
+    public bool giveAds = false;
     void Start()
     {
-        StartCoroutine(ShowVideoWhenInitialized());
+        if (giveAds)
+        {
+            StartCoroutine(ShowVideoWhenInitialized());
+        }
     }
 
     IEnumerator ShowVideoWhenInitialized()
