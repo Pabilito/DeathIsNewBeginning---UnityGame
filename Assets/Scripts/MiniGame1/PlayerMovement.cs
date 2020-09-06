@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Boost"))
         {
-            rb2D.velocity = Vector2.up * thrust * 5;
+            rb2D.velocity = Vector2.up * thrust * 5 * Mathf.Cos(col.transform.rotation.z) + Vector2.left * thrust * 5 * Mathf.Sin(col.transform.rotation.z); ;
         }
         else if (col.gameObject.CompareTag("PortalIn"))
         {
@@ -131,6 +131,7 @@ public class PlayerMovement : MonoBehaviour
             this.transform.position = spawn;
         }
         Instantiate(deadBody, spawnpos, transform.rotation);
+        this.rb2D.velocity = Vector2.zero;
         hitSound.Play();
     }
 
