@@ -12,6 +12,9 @@ TagManager:
   - Wood
   - FlyingObstacle
   - EventSystem
+  - Boost
+  - PortalIn
+  - PortalOut
   layers:
   - Default
   - TransparentFX

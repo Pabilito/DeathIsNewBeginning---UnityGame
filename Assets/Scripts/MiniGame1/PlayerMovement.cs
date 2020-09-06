@@ -64,6 +64,14 @@ public class PlayerMovement : MonoBehaviour
         {
             airborne = false;
         }
+        else if (col.gameObject.CompareTag("Boost"))
+        {
+
+        }
+        else if (col.gameObject.CompareTag("PortalIn"))
+        {
+
+        }
         else if (col.gameObject.CompareTag("Obstacle"))
         {
             respawn();
@@ -80,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             pointSound.Play();
             this.gameObject.GetComponent<HealthAndPointsManager>().addPoint();
         }
-        else if (col.gameObject.CompareTag("Meta") && this.GetComponent<HealthAndPointsManager>().getPoints()>0)
+        else if (col.gameObject.CompareTag("Meta") && this.GetComponent<HealthAndPointsManager>().getPoints() > 0)
         {
             gameEnded = true;
             levelManager.GetComponent<HUDHandler>().showLastLifeWarning(false);

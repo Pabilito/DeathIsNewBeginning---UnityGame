@@ -54,6 +54,54 @@ public class WinHandler1_2 : MonoBehaviour
                     GlobalVariables.instance.setLevelHighScore(18, points);
                 }
                 break;
+            case "Level2_1":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(21, points);
+                }
+                break;
+            case "Level2_2":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(22, points);
+                }
+                break;
+            case "Level2_3":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(23, points);
+                }
+                break;
+            case "Level2_4":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(24, points);
+                }
+                break;
+            case "Level2_5":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(25, points);
+                }
+                break;
+            case "Level2_6":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(26, points);
+                }
+                break;
+            case "Level2_7":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(27, points);
+                }
+                break;
+            case "Level2_8":
+                if (points > 0)
+                {
+                    GlobalVariables.instance.setLevelHighScore(28, points);
+                }
+                break;
         }
     }
 }
