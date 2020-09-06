@@ -66,11 +66,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("Boost"))
         {
-
+            rb2D.velocity = Vector2.up * thrust * 5;
         }
         else if (col.gameObject.CompareTag("PortalIn"))
         {
-
+            teleport();
         }
         else if (col.gameObject.CompareTag("Obstacle"))
         {
@@ -114,6 +114,12 @@ public class PlayerMovement : MonoBehaviour
             airborne = true;
             rb2D.velocity = Vector2.up * thrust;
         }
+    }
+
+    void teleport()
+    {
+        Vector3 spawnpos = GameObject.FindGameObjectWithTag("PortalOut").transform.position;
+        this.transform.position = spawnpos;
     }
 
     void respawn()
