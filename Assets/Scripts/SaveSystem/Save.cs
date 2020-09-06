@@ -11,4 +11,12 @@
     public int starsLevel1_6 = 0;
     public int starsLevel1_7 = 0;
     public int starsLevel1_8 = 0;
+    public int starsLevel2_1 = 0;
+    public int starsLevel2_2 = 0;
+    public int starsLevel2_3 = 0;
+    public int starsLevel2_4 = 0;
+    public int starsLevel2_5 = 0;
+    public int starsLevel2_6 = 0;
+    public int starsLevel2_7 = 0;
+    public int starsLevel2_8 = 0;
 }

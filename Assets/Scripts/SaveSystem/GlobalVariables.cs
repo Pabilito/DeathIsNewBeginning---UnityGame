@@ -9,9 +9,11 @@ public class GlobalVariables : MonoBehaviour
     public static GlobalVariables instance { set; get; }
 
     public GameObject SaveMan;
+
     static int starsLevel0_1 = 0;
     static int starsLevel0_2 = 0;
     static int starsLevel0_3 = 0;
+
     static int starsLevel1_1 = 0;
     static int starsLevel1_2 = 0;
     static int starsLevel1_3 = 0;
@@ -21,6 +23,16 @@ public class GlobalVariables : MonoBehaviour
     static int starsLevel1_7 = 0;
     static int starsLevel1_8 = 0;
     static int sumLevels1;
+
+    static int starsLevel2_1 = 0;
+    static int starsLevel2_2 = 0;
+    static int starsLevel2_3 = 0;
+    static int starsLevel2_4 = 0;
+    static int starsLevel2_5 = 0;
+    static int starsLevel2_6 = 0;
+    static int starsLevel2_7 = 0;
+    static int starsLevel2_8 = 0;
+    static int sumLevels2;
 
     public static bool musinOn = true;
     public static bool extraLifeOn = false;
@@ -40,15 +52,18 @@ public class GlobalVariables : MonoBehaviour
     void calculateSums()
     {
         sumLevels1 = starsLevel1_1 + starsLevel1_2 + starsLevel1_3 + starsLevel1_4 + starsLevel1_5 + starsLevel1_6 + starsLevel1_7 + starsLevel1_8;
+        sumLevels2 = starsLevel2_1 + starsLevel2_2 + starsLevel2_3 + starsLevel2_4 + starsLevel2_5 + starsLevel2_6 + starsLevel2_7 + starsLevel2_8;
     }
 
     public int getLevelSum(int levels)
     {
+        calculateSums();
         switch (levels)
         {
             case 1:
-                calculateSums();
                 return sumLevels1;
+            case 2:
+                return sumLevels2;
         }
         return -1; //error
     }
@@ -80,6 +95,22 @@ public class GlobalVariables : MonoBehaviour
                 return starsLevel1_7;
             case 18:
                 return starsLevel1_8;
+            case 21:
+                return starsLevel2_1;
+            case 22:
+                return starsLevel2_2;
+            case 23:
+                return starsLevel2_3;
+            case 24:
+                return starsLevel2_4;
+            case 25:
+                return starsLevel2_5;
+            case 26:
+                return starsLevel2_6;
+            case 27:
+                return starsLevel2_7;
+            case 28:
+                return starsLevel2_8;
         }
         return -1; //error
     }
@@ -122,6 +153,30 @@ public class GlobalVariables : MonoBehaviour
                 break;
             case 18:
                 currentScore = starsLevel1_8;
+                break;
+            case 21:
+                currentScore = starsLevel2_1;
+                break;
+            case 22:
+                currentScore = starsLevel2_2;
+                break;
+            case 23:
+                currentScore = starsLevel2_3;
+                break;
+            case 24:
+                currentScore = starsLevel2_4;
+                break;
+            case 25:
+                currentScore = starsLevel2_5;
+                break;
+            case 26:
+                currentScore = starsLevel2_6;
+                break;
+            case 27:
+                currentScore = starsLevel2_7;
+                break;
+            case 28:
+                currentScore = starsLevel2_8;
                 break;
             default:
                 currentScore = -1; //error
@@ -176,6 +231,38 @@ public class GlobalVariables : MonoBehaviour
                     starsLevel1_8 = value;
                     SaveMan.GetComponent<SaveManager>().save.starsLevel1_8 = starsLevel1_8;
                     break;
+                case 21:
+                    starsLevel2_1 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_1 = starsLevel2_1;
+                    break;
+                case 22:
+                    starsLevel2_2 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_2 = starsLevel2_2;
+                    break;
+                case 23:
+                    starsLevel2_3 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_3 = starsLevel2_3;
+                    break;
+                case 24:
+                    starsLevel2_4 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_4 = starsLevel2_4;
+                    break;
+                case 25:
+                    starsLevel2_5 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_5 = starsLevel2_5;
+                    break;
+                case 26:
+                    starsLevel2_6 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_6 = starsLevel2_6;
+                    break;
+                case 27:
+                    starsLevel2_7 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_7 = starsLevel2_7;
+                    break;
+                case 28:
+                    starsLevel2_8 = value;
+                    SaveMan.GetComponent<SaveManager>().save.starsLevel2_8 = starsLevel2_8;
+                    break;
             }
             SaveMan.GetComponent<SaveManager>().Save();
         }
@@ -194,6 +281,13 @@ public class GlobalVariables : MonoBehaviour
         starsLevel1_6 = SaveMan.GetComponent<SaveManager>().save.starsLevel1_6;
         starsLevel1_7 = SaveMan.GetComponent<SaveManager>().save.starsLevel1_7;
         starsLevel1_8 = SaveMan.GetComponent<SaveManager>().save.starsLevel1_8;
-
+        starsLevel2_1 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_1;
+        starsLevel2_2 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_2;
+        starsLevel2_3 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_3;
+        starsLevel2_4 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_4;
+        starsLevel2_5 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_5;
+        starsLevel2_6 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_6;
+        starsLevel2_7 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_7;
+        starsLevel2_8 = SaveMan.GetComponent<SaveManager>().save.starsLevel2_8;
     }
 }

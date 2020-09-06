@@ -51,4 +51,14 @@ public class LevelsSectecion1 : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene#1");
     }
+
+    public void OnLevels1()
+    {
+        SceneManager.LoadScene("Selection1");
+    }
+
+    public void OnLevels2()
+    {
+        SceneManager.LoadScene("Selection2");
+    }
 }
