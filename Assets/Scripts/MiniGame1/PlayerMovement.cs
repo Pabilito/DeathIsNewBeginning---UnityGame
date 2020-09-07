@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (!gameEnded)
+        if (!gameEnded && !levelManager.GetComponent<HUDHandler>().paused)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0) && !airborne && !levelManager.GetComponent<HUDHandler>().paused)
             {
