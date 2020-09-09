@@ -153,8 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaveMan: {fileID: 1015844312}
-  musinOn: 1
-  extraLifeOn: 0
 --- !u!4 &229156623
 Transform:
   m_ObjectHideFlags: 0
@@ -505,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8927aab4900bbd04aab219fde1b59bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombardWithAd: 1
 --- !u!114 &870537743
 MonoBehaviour:
   m_ObjectHideFlags: 0

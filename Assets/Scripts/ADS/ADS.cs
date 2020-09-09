@@ -9,11 +9,18 @@ public class ADS : MonoBehaviour
     string bannerID = "Banner1";
     bool testMode = false;
 
+    public bool bombardWithAd = false;
+    string videoID = "rewardedVideo";
+
     void Start()
     {
         Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
         Advertisement.Initialize(gameId, testMode);
         StartCoroutine(ShowBannerWhenInitialized());
+        if (bombardWithAd)
+        {
+            StartCoroutine(BombardWithVideoWhenReady());
+        }
     }
 
     IEnumerator ShowBannerWhenInitialized()
@@ -23,5 +30,14 @@ public class ADS : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
         Advertisement.Banner.Show(bannerID);
+    }
+
+    IEnumerator BombardWithVideoWhenReady()
+    {
+        while (!Advertisement.IsReady(videoID))
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+        Advertisement.Show(videoID);
     }
 }

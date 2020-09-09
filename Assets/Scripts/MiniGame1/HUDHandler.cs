@@ -65,6 +65,7 @@ public class HUDHandler : MonoBehaviour
         defeatTxt.enabled = true;
         Destroy(lastLifeWarning.gameObject);
         showMenuButtons(true);
+        jumpImg.gameObject.SetActive(false);
         pauseButton.gameObject.SetActive(false);
         showBigPoints(0, true);
     }

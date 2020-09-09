@@ -76,13 +76,19 @@ public class PlayerMovement : MonoBehaviour
         else if (col.gameObject.CompareTag("Life"))
         {
             Destroy(col.gameObject);
-            heartSound.Play();
+            if (GlobalVariables.musinOn)
+            {
+                heartSound.Play();
+            }
             this.gameObject.GetComponent<HealthAndPointsManager>().addLife();
         }
         else if (col.gameObject.CompareTag("Point"))
         {
             Destroy(col.gameObject);
-            pointSound.Play();
+            if (GlobalVariables.musinOn)
+            {
+                pointSound.Play();
+            }
             this.gameObject.GetComponent<HealthAndPointsManager>().addPoint();
         }
         else if (col.gameObject.CompareTag("Meta") && this.GetComponent<HealthAndPointsManager>().getPoints() > 0)
@@ -91,7 +97,10 @@ public class PlayerMovement : MonoBehaviour
             levelManager.GetComponent<HUDHandler>().showLastLifeWarning(false);
             levelManager.GetComponent<HUDHandler>().showWinTxt();
             this.gameObject.GetComponent<Rigidbody2D>().simulated = false;
-            finishSound.Play();
+            if (GlobalVariables.musinOn)
+            {
+                finishSound.Play();
+            }    
         }
         else if (col.gameObject.CompareTag("Meta"))
         {
@@ -139,7 +148,10 @@ public class PlayerMovement : MonoBehaviour
             }
             Instantiate(deadBody, spawnpos, transform.rotation);
             this.rb2D.velocity = Vector2.zero;
-            hitSound.Play();
+            if (GlobalVariables.musinOn)
+            {
+                hitSound.Play();
+            }
         }
     }
 
