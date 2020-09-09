@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource heartSound;
     public AudioSource pointSound;
     public AudioSource finishSound;
+    private bool deathDelay = false;
 
     void Start()
     {
@@ -112,6 +113,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    IEnumerator DeathDelay() //prevents multiple deaths
+    {
+        deathDelay = true;
+        yield return new WaitForSeconds(0.1f);
+        deathDelay = false;
+    }
+
     void teleport()
     {
         Vector3 spawnpos = GameObject.FindGameObjectWithTag("PortalOut").transform.position;
@@ -120,15 +128,19 @@ public class PlayerMovement : MonoBehaviour
 
     void respawn()
     {
-        Vector3 spawnpos = this.GetComponent<Transform>().transform.position;
-        this.gameObject.GetComponent<HealthAndPointsManager>().removeLife();
-        if (this.gameObject.GetComponent<HealthAndPointsManager>().getHealth() != -1) //don't move camera on last death
-        { 
-            this.transform.position = spawn;
+        if (!deathDelay)
+        {
+            StartCoroutine(DeathDelay());
+            Vector3 spawnpos = this.GetComponent<Transform>().transform.position;
+            this.gameObject.GetComponent<HealthAndPointsManager>().removeLife();
+            if (this.gameObject.GetComponent<HealthAndPointsManager>().getHealth() != -1) //don't move camera on last death
+            {
+                this.transform.position = spawn;
+            }
+            Instantiate(deadBody, spawnpos, transform.rotation);
+            this.rb2D.velocity = Vector2.zero;
+            hitSound.Play();
         }
-        Instantiate(deadBody, spawnpos, transform.rotation);
-        this.rb2D.velocity = Vector2.zero;
-        hitSound.Play();
     }
 
     public void endGame()

@@ -15,6 +15,7 @@ TagManager:
   - Boost
   - PortalIn
   - PortalOut
+  - ArrowControl
   layers:
   - Default
   - TransparentFX
