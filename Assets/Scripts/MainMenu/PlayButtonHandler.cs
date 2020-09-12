@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Advertisements;
 
 public class PlayButtonHandler : MonoBehaviour
-{
+{  
+    void Start()
+    {
+        print("xd");
+        Application.targetFrameRate = 30;
+    }
+
     public void OnPlay()
     {
         Advertisement.Banner.Hide();
