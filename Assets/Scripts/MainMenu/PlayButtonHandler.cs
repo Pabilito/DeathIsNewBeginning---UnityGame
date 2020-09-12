@@ -8,7 +8,6 @@ public class PlayButtonHandler : MonoBehaviour
 {  
     void Start()
     {
-        print("xd");
         Application.targetFrameRate = 30;
     }
 

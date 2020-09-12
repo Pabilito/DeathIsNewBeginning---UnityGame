@@ -59,4 +59,9 @@ public class LevelsSelection2 : MonoBehaviour
     {
         SceneManager.LoadScene("Selection2");
     }
+
+    public void OnLevels3()
+    {
+        SceneManager.LoadScene("Selection3");
+    }
 }

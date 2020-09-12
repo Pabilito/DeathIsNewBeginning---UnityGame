@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boost: {fileID: 0}
-  isRight: 1
+  isRight: 0
