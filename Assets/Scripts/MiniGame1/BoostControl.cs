@@ -14,11 +14,11 @@ public class BoostControl : MonoBehaviour
         {
             if (isRight)
             {
-                boost.transform.Rotate(0, 0, -1.4f);
+                boost.transform.Rotate(0, 0, -0.9f);
             }
             else
             {
-                boost.transform.Rotate(0, 0, 1.4f);
+                boost.transform.Rotate(0, 0, 0.9f);
             }
         }
     }

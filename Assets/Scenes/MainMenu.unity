@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8927aab4900bbd04aab219fde1b59bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombardWithAd: 0
+  bombardWithAd: 1
 --- !u!114 &870537743
 MonoBehaviour:
   m_ObjectHideFlags: 0

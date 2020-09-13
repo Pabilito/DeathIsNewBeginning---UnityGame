@@ -2251,6 +2251,10 @@ PrefabInstance:
       propertyPath: boost
       value: 
       objectReference: {fileID: 778462414}
+    - target: {fileID: 1948301466043932226, guid: e42db29bb1bdf974eb155d583c12c6a9, type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6268243293927022876, guid: e42db29bb1bdf974eb155d583c12c6a9, type: 3}
       propertyPath: m_Name
       value: ArrowControl (2)
@@ -5901,6 +5905,10 @@ PrefabInstance:
       propertyPath: boost
       value: 
       objectReference: {fileID: 1419475158}
+    - target: {fileID: 1948301466043932226, guid: e42db29bb1bdf974eb155d583c12c6a9, type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6268243293927022876, guid: e42db29bb1bdf974eb155d583c12c6a9, type: 3}
       propertyPath: m_Name
       value: ArrowControl (5)
@@ -7571,6 +7579,10 @@ PrefabInstance:
       propertyPath: boost
       value: 
       objectReference: {fileID: 2105926896}
+    - target: {fileID: 1948301466043932226, guid: e42db29bb1bdf974eb155d583c12c6a9, type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6268243293927022876, guid: e42db29bb1bdf974eb155d583c12c6a9, type: 3}
       propertyPath: m_Name
       value: ArrowControl
