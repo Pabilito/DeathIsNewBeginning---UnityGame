@@ -116,7 +116,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator JumpDelay()
     {
         yield return new WaitForSeconds(0.1f);
-        if (!levelManager.GetComponent<HUDHandler>().paused) {
+        if (!levelManager.GetComponent<HUDHandler>().paused && !GlobalVariables.instance.cameraSwap) {
             airborne = true;
             rb2D.velocity = Vector2.up * thrust;
         }

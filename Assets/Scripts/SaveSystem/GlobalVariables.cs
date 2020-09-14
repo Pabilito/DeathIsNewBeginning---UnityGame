@@ -46,6 +46,7 @@ public class GlobalVariables : MonoBehaviour
 
     public static bool musinOn = true;
     public static bool extraLifeOn = false;
+    public bool cameraSwap = false;
 
     private void Awake()
     {
@@ -382,5 +383,17 @@ public class GlobalVariables : MonoBehaviour
         starsLevel3_6 = SaveMan.GetComponent<SaveManager>().save.starsLevel3_6;
         starsLevel3_7 = SaveMan.GetComponent<SaveManager>().save.starsLevel3_7;
         starsLevel3_8 = SaveMan.GetComponent<SaveManager>().save.starsLevel3_8;
+    }
+
+    public void CameraSwapJumpPrevention()
+    {
+        StartCoroutine(JumpDelayCamera());
+    }
+
+    IEnumerator JumpDelayCamera()
+    {
+        cameraSwap = true;
+        yield return new WaitForSeconds(0.25f);
+        cameraSwap = false;
     }
 }
