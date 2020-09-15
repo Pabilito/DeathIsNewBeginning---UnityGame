@@ -1339,8 +1339,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241394731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3, y: 3.54, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.447, y: 4.233, z: 2}
+  m_LocalScale: {x: 1.0888339, y: 1.4837745, z: 1}
   m_Children: []
   m_Father: {fileID: 1134967458}
   m_RootOrder: 2
@@ -5657,8 +5657,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134967456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.7, y: -8.9, z: 25}
-  m_LocalScale: {x: 4.966988, y: 2.8382573, z: 1}
+  m_LocalPosition: {x: 4.57, y: -12.68, z: 25}
+  m_LocalScale: {x: 5.87873, y: 4.631131, z: 1}
   m_Children:
   - {fileID: 1151998808}
   - {fileID: 1371026830}
@@ -5679,7 +5679,7 @@ GameObject:
   - component: {fileID: 1150213725}
   - component: {fileID: 1150213724}
   m_Layer: 5
-  m_Name: RetryButton (1)
+  m_Name: CameraSwap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
